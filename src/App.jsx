@@ -11,12 +11,14 @@ import Home from './pages/Home';
 // import DetailVideo from './pages/DetailVideo';
 // import About from './pages/About';
 // import Contact from './pages/Contact';
+import Navbar from './components/Navbar/Navbar'
 
 
 function App() {
   return (
     <>
-      <Routes>        
+        <Navbar />
+        <Routes>     
         <Route exact path="/" element={<Home />} />
         {/* <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />

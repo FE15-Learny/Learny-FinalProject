@@ -206,6 +206,10 @@
     width: calc(100% / 3);
     padding: 1rem;
   }
+
+  .row-vid {
+    padding-bottom: 4rem;
+  }
   
   .card {
     border: 1px solid #ccc;
