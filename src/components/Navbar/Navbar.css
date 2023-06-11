@@ -1,0 +1,171 @@
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--white);
+    padding: 2rem 10rem;
+}
+
+/*-----------------------------------*\
+  #NAVBAR
+\*-----------------------------------*/
+
+.navbar a:focus, .navbar a:hover {
+    color: var(--blue);
+}
+
+.navbar a:focus:after, .navbar a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.navbar a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--blue);
+    transition: width 400ms ease-in-out, left 400ms ease-in-out;
+}
+
+.nav-btn #signup, .nav-btn #login {
+    width: 105px;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 1rem;
+    border-radius: 12px;
+    transition: background-color 400ms ease-in-out, color 400ms ease-in-out, box-shadow 400ms ease-in-out, border-color 400ms ease-in-out;
+}
+
+.nav-btn #signup {
+    color: var(--blue);
+    border-style: solid;
+    border-color: var(--blue);
+    background-color: var(--white);
+}
+
+.nav-btn #signup:hover {
+    background-image: none;
+    background-color: var(--orange);
+    color: var(--black);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-color: var(--orange);
+}
+
+.nav-btn #login {
+    margin-left: 2rem;
+    color: var(--white);
+    border: 0;
+    background-image: linear-gradient(144deg, var(--peach), 10%, var(--blue), var(--orange));
+}
+
+.nav-btn #login:hover {
+    background-image: none;
+    background-color: var(--orange);
+    color: var(--black);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+    width: 90%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    margin-left: 5rem;
+    padding-top: 1rem;
+    color: var(--light-black);
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition: color 400ms ease-in-out;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color:var(--blue2);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -30%;
+        width: 30%;
+        height: 100vh;
+        padding-top: 20%;
+        background-color: #eeeeee;
+        text-align: left;
+        flex-direction: column;
+        transition: all 0.5s ease;
+        visibility: hidden;
+    }
+    .show-menu .nav-links {
+        right: 0;
+        visibility: visible;
+    }
+    .nav-links li {
+        margin: 0.7rem 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 2rem 3rem;
+    }
+    .nav-links {
+        right: -40%;
+        width: 40%;
+        height: 100vh;           
+    }
+    .logo img {
+        width: 70%;
+    }
+    .nav-btn #signup,
+    .nav-btn #login {
+        width: 90px;
+        font-size: 1.4rem;
+    }
+}

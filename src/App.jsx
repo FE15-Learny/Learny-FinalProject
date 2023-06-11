@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import Home from './pages/Home';
+import { Route, Routes  } from 'react-router-dom';
+import Home from './pages/Home';
 // import Login from './pages/Login';
 // import SignUp from './pages/SignUp';
 // import Category from './pages/Category';
@@ -12,12 +12,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import About from './pages/About';
 import Contact from './pages/Contact';
 
-
 function App() {
   return (
     <>
-      <Routes>      
-        {/* <Route path="/home" element={<Home />} /> */}
+      <Routes>        
+        <Route exact path="/" element={<Home />} />
+
         {/* <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/category" element={<Category />} />
@@ -27,8 +27,10 @@ function App() {
         <Route path="/detail-article" element={<DetailArticle />} />
         <Route path="/video" element={<Video />} />
         <Route path="/detail-video" element={<DetailVideo />} />
-        <Route path="/about" element={<About />} /> */}
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} /> */}
+
       </Routes>
     </>
   );
