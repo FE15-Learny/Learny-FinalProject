@@ -10,14 +10,14 @@ import Home from './pages/Home';
 // import Video from './pages/Video';
 // import DetailVideo from './pages/DetailVideo';
 // import About from './pages/About';
-// import Contact from './pages/Contact';
-
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <>
       <Routes>        
         <Route exact path="/" element={<Home />} />
+
         {/* <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/category" element={<Category />} />
@@ -27,8 +27,10 @@ function App() {
         <Route path="/detail-article" element={<DetailArticle />} />
         <Route path="/video" element={<Video />} />
         <Route path="/detail-video" element={<DetailVideo />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */}
+
       </Routes>
     </>
   );
