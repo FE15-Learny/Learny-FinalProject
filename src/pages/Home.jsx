@@ -3,15 +3,18 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import "../style/Home.css";
 import "../index.css";
+import Navbar from '../components/Navbar/Navbar';
+
 
 function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/Home");
+    navigate("/");
   }, []);
 
   return (
+  
     <div>
       <section id="hero">
         <Container className="d-flex align-items-center">
@@ -264,7 +267,7 @@ function Home() {
                   software developers who now work with data as much as source
                   code is changing fundamentally.
                 </Card.Text>
-                <Link to="/DetailArticle" className="btn-article">
+                <Link to ="/DetailArticle" className="btn-article">
                   Read More
                 </Link>
               </Card.Body>
