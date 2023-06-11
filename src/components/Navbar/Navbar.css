@@ -74,6 +74,32 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
+
+.nav-btn #profile {
+    display: flex;
+    width: 200px;
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 500;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    border-style: solid;
+    border-radius: 12px;
+    background-image: linear-gradient(144deg, var(--peach), 10%, var(--blue), var(--orange));
+    border: 0;
+  }
+  
+  .nav-btn #profile:hover {
+    background-image: none;
+    background-color: var(--orange);
+    color: var(--black);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-btn #profile p{
+      padding-left: 1rem;
+  }
+
 .logo img {
     width: 90%;
 }

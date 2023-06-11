@@ -67,7 +67,7 @@ const NavUser = () => {
         <div className="nav-btn">
           <button id="profile">
             <img src="src/assets/img/icon-profile.png" width="30" alt="username" />
-            Skilvul - FE 15
+            <p>Skilvul - FE 15</p>
           </button>
         </div>
 
