@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { articlelist } from "../config/data";
+import { articlelist } from "../config/dataarticle";
 import ArticleList from "../components/ArticleList";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
