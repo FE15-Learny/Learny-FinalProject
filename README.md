@@ -1,1 +1,4 @@
 # Learny-FinalProject
+
+Navbar
+Homepage
