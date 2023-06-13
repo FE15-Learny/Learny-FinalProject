@@ -8,7 +8,7 @@ function Category() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/");
+    navigate("/category");
   }, []);
 
   return (
@@ -26,7 +26,7 @@ function Category() {
       <section id="card">
         <div className="roa">
           <div className="b-card">
-            <img src="img/cat1.png" width={275} alt="cat1" />
+            <img src="src/assets/img/cat1.png" width={275} alt="cat1" />
             <h4>E-Books</h4>
             <div className="foot">
               <p>
@@ -53,7 +53,7 @@ function Category() {
             </div>
           </div>
           <div className="b-card">
-            <img src="img/cat2.png" width={275} alt="cat2" />
+            <img src="src/assets/img/cat2.png" width={275} alt="cat2" />
             <h4>Articles</h4>
             <div className="foot">
               <p>
@@ -80,7 +80,7 @@ function Category() {
             </div>
           </div>
           <div className="b-card">
-            <img src="img/cat3.png" width={275} alt="cat3" />
+            <img src="src/assets/img/cat3.png" width={275} alt="cat3" />
             <h4>Video Learning</h4>
             <div className="foot">
               <p>
