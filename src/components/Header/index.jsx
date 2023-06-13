@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="article-header">
       <h1>
-        <span>"</span> All Articles <span>"</span>
+        All Articles
       </h1>
       <p>
         Find interesting articles here and immerse yourself in the world of

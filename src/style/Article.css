@@ -8,6 +8,7 @@
     color: #a9a9a9;
     font-weight: 500;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     display: block;
 }
 .article-wrap header {
@@ -28,10 +29,10 @@
 .article-subcategory >div {
     margin: 1rem;
 }
-.article-desc {
+.article-content {
     padding: 1rem;
     margin-top: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: justify;
     color: var(--light-black);
 }

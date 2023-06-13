@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { articlelist } from "../config/data";
+import ReactMarkdown from 'react-markdown'
 import Chip from "../components/common/Chip";
 import EmptyList from "../components/common/EmptyList";
 import '../style/Article.css';
@@ -29,7 +29,7 @@ function Articledetails() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <Link className="article-goback" to="/article">
         <span> &#8592;</span> <span>Go Back</span>
       </Link>
@@ -48,7 +48,8 @@ function Articledetails() {
             </div>
           </header>
           <img src={article.cover} alt="cover" />
-          <p className="article-desc">{article.content}</p>
+          {/* <p className="article-desc">{article.content}</p> */}
+          <ReactMarkdown className="article-content">{article.content}</ReactMarkdown>
         </div>
       ) : (
         <EmptyList />

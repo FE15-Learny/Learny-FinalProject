@@ -33,29 +33,38 @@ function Article() {
   useEffect(() => {
     const getAPI = async () => {
       try {
-        const response = await axios.get('https://64833958f2e76ae1b95c29a5.mockapi.io/articles')
-        setArticles(response.data)
-        setIsLoading(false)
+        const response = await axios.get(
+          "https://64833958f2e76ae1b95c29a5.mockapi.io/articles"
+        );
+        setArticles(response.data);
+        setIsLoading(false);
       } catch (error) {
-        console.error(error)
+        console.error(error);
       }
-    }
+    };
 
-    getAPI()
+    getAPI();
   }, []);
 
   return (
-    <div className="container">
+    <div>
       <Header />
+      <div className="container"> 
+        <SearchBar
+          value={searchKey}
+          clearSearch={handleClearSearch}
+          formSubmit={handleSearchSubmit}
+          handleSearchKey={(e) => setSearchKey(e.target.value)}
+        />
 
-      <SearchBar
-        value={searchKey}
-        clearSearch={handleClearSearch}
-        formSubmit={handleSearchSubmit}
-        handleSearchKey={(e) => setSearchKey(e.target.value)}
-      />
-
-    {isLoading ? <p>Loading...</p> : articles.length ? <ArticleList articles={articles} /> :  <EmptyList />}
+        {isLoading ? (
+          <p>Loading...</p>
+        ) : articles.length ? (
+          <ArticleList articles={articles} />
+        ) : (
+          <EmptyList />
+        )}
+      </div>
     </div>
   );
 }
