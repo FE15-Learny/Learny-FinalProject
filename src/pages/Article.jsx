@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { articlelist } from "../config/dataarticle";
 import ArticleList from "../components/ArticleList";
-import Header from "../components/Header";
+import HeaderArticle from "../components/HeaderArticle";
 import SearchBar from "../components/SearchBar";
 import EmptyList from "../components/common/EmptyList";
 import axios from "axios";
@@ -48,7 +48,7 @@ function Article() {
 
   return (
     <div>
-      <Header />
+      <HeaderArticle />
       <div className="container"> 
         <SearchBar
           value={searchKey}

@@ -1,7 +1,7 @@
 import React from "react";
 import './articleheader.css';
 
-function Header() {
+function HeaderArticle() {
   return (
     <header className="article-header">
       <h1>
@@ -15,4 +15,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderArticle;
