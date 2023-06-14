@@ -10,7 +10,6 @@ function Ebook() {
   const [ebooks, setEbooks] = useState(ebooklist);
   const [searchKey, setSearchKey] = useState("");
   const [isLoading, setIsLoading] = useState(true);
-
   const handleSearchSubmit = (event) => {
     event.preventDefault();
     handleSearchResults();
@@ -19,14 +18,14 @@ function Ebook() {
   const handleSearchResults = () => {
     const allEbooks = ebooklist;
     const filteredEbooks = allEbooks.filter((ebook) =>
-      article.category.toLowerCase().includes(searchKey.toLowerCase().trim())
+      ebook.category.toLowerCase().includes(searchKey.toLowerCase().trim())
     );
 
     setEbooks(filteredEbooks);
   };
 
   const handleClearSearch = () => {
-    setArticles(ebooklist);
+    setEbooks(ebooklist);
     setSearchKey("");
   };
 
@@ -36,7 +35,7 @@ function Ebook() {
         const response = await axios.get(
           "https://64833958f2e76ae1b95c29a5.mockapi.io/articles"
         );
-        setArticles(response.data);
+        setEbooks(response.data);
         setIsLoading(false);
       } catch (error) {
         console.error(error);

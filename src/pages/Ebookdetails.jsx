@@ -17,12 +17,12 @@ function Ebookdetails() {
           "https://64833958f2e76ae1b95c29a5.mockapi.io/articles"
         );
 
-        const article = response?.data?.find(
-          (article) => article.id === parseInt(articleId)
+        const ebook = response?.data?.find(
+          (ebook) => ebook.id === parseInt(ebookId)
         );
 
-        if (article) {
-          setArticle(article);
+        if (ebook) {
+          setEbook(ebook);
         }
       } catch (error) {
         console.error(error);
