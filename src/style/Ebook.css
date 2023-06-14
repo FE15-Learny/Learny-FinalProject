@@ -1,0 +1,38 @@
+.ebook-wrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.ebook-goback {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #a9a9a9;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: block;
+}
+.ebook-wrap header {
+  text-align: center;
+}
+.ebook-date {
+  font-size: 1.2rem;
+  color: #a9a9a9;
+  font-weight: 500;
+}
+.ebook-wrap img {
+  width: 100%;
+}
+.ebook-subcategory {
+  display: flex;
+  justify-content: center;
+}
+.ebook-subcategory > div {
+  margin: 1rem;
+}
+.ebook-content {
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  text-align: justify;
+  color: var(--light-black);
+}

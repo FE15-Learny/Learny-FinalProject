@@ -1,14 +1,12 @@
 import React from "react";
-import './articleheader.css';
+import "./ebookheader.css";
 
 function Header() {
   return (
-    <header className="article-header">
-      <h1>
-        All Articles
-      </h1>
+    <header className="ebook-header">
+      <h1>All E-Books</h1>
       <p>
-        Find interesting articles here and immerse yourself in the world of
+        Find interesting e-books here and immerse yourself in the world of
         literacy
       </p>
     </header>
