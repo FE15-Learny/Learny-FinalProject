@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ebooklist } from "../config/dataebook";
 import EbookList from "../components/EbookList";
-import Header from "../components/Header";
+import HeaderEbook from "../components/HeaderEbook";
 import SearchBar from "../components/SearchBar";
 import EmptyList from "../components/common/EmptyList";
 import axios from "axios";
@@ -33,7 +33,7 @@ function Ebook() {
     const getAPI = async () => {
       try {
         const response = await axios.get(
-          "https://64833958f2e76ae1b95c29a5.mockapi.io/articles"
+          "https://6489db485fa58521cab0607f.mockapi.io/ebook"
         );
         setEbooks(response.data);
         setIsLoading(false);
@@ -47,7 +47,7 @@ function Ebook() {
 
   return (
     <div>
-      <Header />
+      <HeaderEbook />
       <div className="container">
         <SearchBar
           value={searchKey}

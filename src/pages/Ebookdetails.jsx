@@ -14,7 +14,7 @@ function Ebookdetails() {
     const getAPI = async () => {
       try {
         const response = await axios.get(
-          "https://64833958f2e76ae1b95c29a5.mockapi.io/articles"
+          "https://6489db485fa58521cab0607f.mockapi.io/ebook"
         );
 
         const ebook = response?.data?.find(

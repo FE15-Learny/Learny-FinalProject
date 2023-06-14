@@ -1,7 +1,7 @@
 import React from "react";
 import "./ebookheader.css";
 
-function Header() {
+function HeaderEbook() {
   return (
     <header className="ebook-header">
       <h1>All E-Books</h1>
@@ -13,4 +13,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderEbook;
