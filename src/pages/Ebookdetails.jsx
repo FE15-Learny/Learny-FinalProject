@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import Chip from "../components/common/Chip";
 import EmptyList from "../components/common/EmptyList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import "../style/Ebook.css";
 import axios from "axios";
 
@@ -51,14 +53,22 @@ function Ebookdetails() {
               ))}
             </div>
           </header>
-          <img src={ebook.cover} alt="cover" />
-          {/* <p className="ebook-desc">{ebook.content}</p> */}
-          <ReactMarkdown className="ebook-content">
-            {ebook.content}
-          </ReactMarkdown>
-          <Link to={ebook.link}>
-            <button className="btn">Download PDF</button>
-          </Link>
+          <div className="row">
+            <div className="left">
+              <img src={ebook.cover} alt="cover" />
+              <Link to={ebook.link}>
+                <button className="btn">
+                  <FontAwesomeIcon icon={faFilePdf} />
+                  <span>D</span>Download PDF
+                </button>
+              </Link>
+            </div>
+            <div className="right">
+              <ReactMarkdown className="ebook-content">
+                {ebook.content}
+              </ReactMarkdown>
+            </div>
+          </div>
         </div>
       ) : (
         <EmptyList />

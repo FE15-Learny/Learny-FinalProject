@@ -19,9 +19,10 @@
   color: #a9a9a9;
   font-weight: 500;
 }
-.ebook-wrap img {
-  width: 100%;
+.left img {
+  width: 95%;
 }
+
 .ebook-subcategory {
   display: flex;
   justify-content: center;
@@ -29,10 +30,23 @@
 .ebook-subcategory > div {
   margin: 1rem;
 }
-.ebook-content {
-  padding: 1rem;
-  margin-top: 1.5rem;
-  font-size: 1.3rem;
+.left {
+  flex-basis: 35%;
+}
+.right {
+  flex-basis: 65%;
+}
+.right .ebook-content p {
   text-align: justify;
-  color: var(--light-black);
+  font-weight: 100;
+}
+.left .btn {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+}
+.left .btn span {
+  color: white;
+  font-size: 5px;
 }
