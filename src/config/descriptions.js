@@ -12,6 +12,7 @@
     authorAvatar: "https://i.ibb.co/SmPv880/jon-ducket.jpg",
     createdAt: "Dec 30, 2009",
     cover: "https://i.ibb.co/8YDB4sj/cover1.png",
+    link: "https://youtu.be/6j1Zoki1k8o",
   },
   {
     id: 2,

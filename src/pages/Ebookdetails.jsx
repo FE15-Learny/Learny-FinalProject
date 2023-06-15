@@ -44,7 +44,7 @@ function Ebookdetails() {
             <p className="ebook-date">Published {ebook.createdAt}</p>
             <h1>{ebook.title}</h1>
             <div className="ebook-subcategory">
-              {ebook.subCategory.map((category, i) => (
+              {ebook?.subCategory?.map((category, i) => (
                 <div key={i}>
                   <Chip label={category} />
                 </div>
@@ -56,6 +56,9 @@ function Ebookdetails() {
           <ReactMarkdown className="ebook-content">
             {ebook.content}
           </ReactMarkdown>
+          <Link to={ebook.link}>
+            <button className="btn">Download PDF</button>
+          </Link>
         </div>
       ) : (
         <EmptyList />

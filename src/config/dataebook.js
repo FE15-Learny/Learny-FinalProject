@@ -11,6 +11,7 @@ export const ebooklist = [
       'https://i.ibb.co/SmPv880/jon-ducket.jpg alt="jon-ducket" border="0"',
     createdAt: "Dec 30, 2009",
     cover: 'https://i.ibb.co/8YDB4sj/cover1.png alt="cover1" border="0"',
+    link: "https://youtu.be/6j1Zoki1k8o",
   },
   {
     id: 2,
