@@ -39,6 +39,7 @@
 .right .ebook-content p {
   text-align: justify;
   font-weight: 100;
+  font-size: 14px;
 }
 .left .btn {
   font-weight: bold;
