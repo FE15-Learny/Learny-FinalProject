@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import EmptyList from '../../components/common/EmptyList';
-import VideoList from '../../components/Home/VideoList';
-import Header from '../../components/Home/HeaderVideo';
-import SearchBar from '../../components/Home/SearchBar';
-import { videoList } from '../../config/datavideo';
+import EmptyList from '../components/common/EmptyList';
+import VideoList from '../components/Home/VideoList';
+import Header from '../components/Home/HeaderVideo';
+import SearchBar from '../components/Home/SearchBar';
+import { videoList } from '../config/datavideo';
 
 const Home = () => {
   const navigate = useNavigate();

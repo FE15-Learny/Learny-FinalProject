@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { videoList } from "../../config/datavideo";
-import Chip from "../../components/common/Chip";
-import EmptyList from "../../components/common/EmptyList";
+import { videoList } from "../config/datavideo";
+import Chip from "../components/common/Chip";
+import EmptyList from "../components/common/EmptyList";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShareAlt } from "@fortawesome/free-solid-svg-icons";
 import Swal from 'sweetalert2';
-import "./styles.css";
+import "../style/video.css";
 
 library.add(faShareAlt);
 
