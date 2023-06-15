@@ -48,7 +48,6 @@ function Articledetails() {
             </div>
           </header>
           <img src={article.cover} alt="cover" />
-          {/* <p className="article-desc">{article.content}</p> */}
           <ReactMarkdown className="article-content">{article.content}</ReactMarkdown>
         </div>
       ) : (
