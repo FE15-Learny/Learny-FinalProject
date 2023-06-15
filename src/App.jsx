@@ -13,11 +13,16 @@ import Video from './pages/Video';
 import DetailVideo from './pages/Detail Video';
 // import About from './pages/About';
 // import Contact from './pages/Contact';
+// import Navbar from './components/Navbar/Navbar'
+
+
 
 
 function App() {
   return (
+    
     <Router>
+      {/* <Navbar/> */}
       <Routes>        
         {/* <Route path="/" element={<Home />} /> */}
         {/* <Route path="/login" element={<Login />} />
@@ -27,7 +32,7 @@ function App() {
         <Route path="/detail-book" element={<DetailEbook />} />
         <Route path="/article" element={<Article />} />
         <Route path="/detail-article" element={<DetailArticle />} /> */}
-        <Route path='/' element={<Video />} />
+        <Route path='/video' element={<Video />} />
         <Route path="/Video/:id" element={<DetailVideo />} />
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */}
