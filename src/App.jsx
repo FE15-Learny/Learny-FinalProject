@@ -8,7 +8,7 @@ import SignUp from './pages/SignUp';
 // import Article from './pages/Article';
 // import DetailArticle from './pages/DetailArticle';
 import Video from './pages/Video';
-import DetailVideo from './pages/DetailVideo';
+import DetailVideo from './pages/Detail Video';
 // import About from './pages/About';
 // import Contact from './pages/Contact';
 import Navbar from './components/Navbar/Navbar'
