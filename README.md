@@ -1,1 +1,7 @@
-FE 15 - Learny React.js Final Project
+# Learny-FinalProject
+
+- Navbar
+- Homepage
+- All Video
+- Detail Video Page
+
