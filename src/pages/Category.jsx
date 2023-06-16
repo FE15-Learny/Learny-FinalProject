@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import "../style/Category.css";
-import "../index.css";
+import "../Index.css";
 
 function Category() {
   const navigate = useNavigate();
