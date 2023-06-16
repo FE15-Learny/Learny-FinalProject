@@ -7,7 +7,15 @@ import axios from 'axios';
 import './Navbar.css';
 
 const NavUser = () => {
-  const user = useSelector(state => state);
+  const user = localStorage.getItem('user-info') ? JSON.parse(localStorage.getItem('user-info')) : {
+    name: '',
+    email: ''
+  }
+  // const [userData, setUserData] = useState({
+  //   name: '',
+  //   email: ''
+  // })
+  // const user = useSelector(state => state);
   const dispatch = useDispatch()
   const navigate = useNavigate();
   const [showDropdown, setShowDropdown] = useState(false);
@@ -37,6 +45,7 @@ const NavUser = () => {
 
   const handleLogout = () => {
     dispatch({ type: 'remove-user' })
+    localStorage.removeItem('user-info')
     navigate('/');
   };
 
@@ -96,7 +105,7 @@ const NavUser = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/video">Category</Link>
+            <Link to="/category">Category</Link>
           </li>
           <li>
             <Link to="/about">About</Link>

@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
+
 
 const NavGuest = () => { 
   const navigate = useNavigate();
@@ -48,12 +49,14 @@ const NavGuest = () => {
         </Link>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/video">Category</Link></li>
+          <li><Link to="/category">Category</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
 
         <div className="nav-btn">
+        
+
           <button id="signup">Sign Up</button>
           <button id="login">Log In</button>
         </div>

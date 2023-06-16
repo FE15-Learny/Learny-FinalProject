@@ -121,30 +121,56 @@ function Home() {
                     <iframe
                       width="100%"
                       height="auto"
-                      src="https://www.youtube.com/embed/o1IaduQICO0"
+                      src="https://www.youtube.com/embed/oYRda7UtuhA"
                       frameBorder="0"
                       allowFullScreen
                     ></iframe>
                   </div>
                   <Card.Body>
                     <Card.Title id="vid-card-title">
-                    <Link to="/video/2" style={{ textDecoration: 'none' }}>
-                      JavaScript Full Course
-                      <br />
-                      Tutorial For Beginners
+                    <Link to="/video/7" style={{ textDecoration: 'none' }}>
+                      How To Make Website Using HTML & CSS Multi Page Website Design
+                      
                       </Link>
                     </Card.Title>
                     <Card.Text>
-                      This Edureka video on "JavaScript full course" is a
-                      complete guide to JavaScript which covers in-depth
-                      knowledge about data types, variables, functions, event
-                      handling, form validation, etc.
+                    In this comprehensive video tutorial, you will gain hands-on 
+                    experience in creating a complete website design using HTML and CSS. 
+                    We will guide step by step through the process.
+
                     </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
 
               {/* Video 2 */}
+              <Col md={4} className="col-vid">
+                <Card>
+                  <div className="card-img-top">
+                    <iframe
+                      width="100%"
+                      height="auto"
+                      src="https://www.youtube.com/embed/qz0aGYrrlhU"
+                      frameBorder="0"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                  <Card.Body>
+                    <Card.Title id="vid-card-title">
+                    <Link to="/video/5" style={{ textDecoration: 'none' }}>
+                    HTML Tutorial for Beginners: HTML Crash Course
+                      </Link>
+                    </Card.Title>
+                    <Card.Text>
+                    Welcome to the HTML Tutorial for Beginners! In this crash course, 
+                    we will take you on an exciting journey through the world of HTML 
+                    (Hypertext Markup Language).
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+
+              {/* Video 3 */}
               <Col md={4} className="col-vid">
                 <Card>
                   <div className="card-img-top">
@@ -158,7 +184,7 @@ function Home() {
                   </div>
                   <Card.Body>
                     <Card.Title id="vid-card-title">
-                    <Link to="/video/2" style={{ textDecoration: 'none' }}>
+                    <Link to="/video/6" style={{ textDecoration: 'none' }}>
                       Build and Deploy a Fully Responsive Website with Modern
                       UI/UX
                       </Link>
@@ -171,37 +197,10 @@ function Home() {
                   </Card.Body>
                 </Card>
               </Col>
-
-              {/* Video 3 */}
-              <Col md={4} className="col-vid">
-                <Card>
-                  <div className="card-img-top">
-                    <iframe
-                      width="100%"
-                      height="auto"
-                      src="https://www.youtube.com/embed/Q33KBiDriJY"
-                      frameBorder="0"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                  <Card.Body>
-                    <Card.Title id="vid-card-title">
-                    <Link to="/video/2" style={{ textDecoration: 'none' }}>
-                        Web Development Full Course - 10 Hours Learn Web
-                        Development
-                      </Link>
-                    </Card.Title>
-                    <Card.Text>
-                      This Edureka Web Development Full Course video will help
-                      you understand and learn Web Development in detail. This
-                      Tutorial is ideal for beginners as well as professionals.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
             </Row>
+              
 
-            <Link to="/Video" className="btn-more">
+            <Link to="/video" className="btn-more">
               See More
             </Link>
           </div>
@@ -222,26 +221,29 @@ function Home() {
         <Row className="row-cols-1 row-cols-md-3 g-4" id="card-art">
           <Col>
             <Card className="h-100">
-              <Card.Img variant="top" src="src/assets/img/art1.jpg" alt="..." />
+              <Card.Img variant="top" src="https://i.ibb.co/2kJqJqZ/art3.jpg" alt="art3" border="0" />
               <Card.Body>
-                <Card.Title className="art-card-title">
-                  Write Code that is Easy to Delete, Not Easy to Extend
+                <Card.Title>
+                When Front-End Means Full Stack
                 </Card.Title>
                 <div className="user-info">
                   <img
-                    src="src/assets/img/icon-profile.png"
+                    src="https://i.ibb.co/LtHH2BW/download.jpg" 
                     alt="Circle-icons-profile-svg"
                     border="0"
                   />
-                  <span>Nitin Bhide</span>
-                  <span>July 23, 2020</span>
+                  <span>Chris Coyier</span>
+                  <span>May 20, 2020</span>
                 </div>
                 <Card.Text>
-                If we see ‘lines of code’ as ‘lines spent’, then when we delete lines of code, 
-                we are lowering the cost of maintenance. Instead of building re-usable software, 
-                we should try build disposable software.
+                Frontend development is at the intersection of art and logic, 
+                business and expression, left brain and right brain, design and 
+                nerdery.
+                <br/>
+                <br/>
+
                 </Card.Text>
-                <Link to="/article/1" className="btn-article">
+                <Link to="/article/6" className="btn-article">
                   Read More
                 </Link>
               </Card.Body>
@@ -250,12 +252,12 @@ function Home() {
 
           <Col>
             <Card className="h-100">
-              <Card.Img variant="top" src="https://i.ibb.co/6ZBHQG7/art4.jpg" alt="..." />
+              <Card.Img variant="top" src="https://i.ibb.co/6ZBHQG7/art4.jpg" />
               <Card.Body>
                 <Card.Title>Hierarchy Strips in User Interfaces</Card.Title>
                 <div className="user-info">
                   <img
-                    src="src/assets/img/icon-profile.png"
+                    src="https://i.ibb.co/ygRPwbZ/download.jpg"
                     alt="Circle-icons-profile-svg"
                     border="0"
                   />
@@ -278,22 +280,23 @@ function Home() {
             <Card className="h-100">
               <Card.Img variant="top" src="src/assets/img/art3.jpg" alt="..." />
               <Card.Body>
-                <Card.Title>When Front-End Means Full Stack</Card.Title>
+                <Card.Title>Dear Junior UI/UX Designer</Card.Title>
                 <div className="user-info">
                   <img
-                    src="src/assets/img/icon-profile.png"
+                    src="https://i.ibb.co/gRRZFdc/download.jpg"
                     alt="Circle-icons-profile-svg"
                     border="0"
                   />
-                  <span>JAROT DIAN S.</span>
-                  <span>Sep 14, 2020</span>
+                  <span>Ruqayyah Yaro</span>
+                  <span>July 20, 2022</span>
                 </div>
                 <Card.Text>
-                Frontend development is at the intersection of art and logic, business and expression, 
-                left brain and right brain, design and nerdery.
+                If you feel lost and overwhelmed and have been looking for 
+                a guide or a little pick me up, this post is for you and I hope 
+                it gives you the clarity and answers you need.
                 </Card.Text>
 
-                <Link to="/DetailArticle" className="btn-article">
+                <Link to="/article/2" className="btn-article">
                   Read More
                 </Link>
               </Card.Body>
@@ -307,25 +310,31 @@ function Home() {
           <div className="popbook-title">
             <h1>OUR POPULAR E-BOOKS</h1>
           </div>
-          <Container>
+          <div className="container">
             <Row className="row-b">
               {/* Book 1 */}
               <Col className="col-b">
-                <img src="src/assets/img/book1.jpg" alt="image-59" border="0" />
+                <Link to="/e-book/1">
+                  <img src="src/assets/img/book1.png" alt="image-59" border="0" />
+                </Link>
               </Col>
 
               {/* Book 2 */}
               <Col className="col-b">
+              <Link to="/e-book/2">
                 <img src="src/assets/img/book2.jpg" alt="image-59" border="0" />
+              </Link>
               </Col>
 
               {/* Book 3 */}
               <Col className="col-b">
-                <img src="src/assets/img/book4.jpg" alt="image-59" border="0" />
+              <Link to="/e-book/6">
+                <img src="src/assets/img/book6.png" alt="image-59" border="0" />
+              </Link>
               </Col>
             </Row>
-          </Container>
-          <Link to="/Ebook" className="btn-more">
+          </div>
+          <Link to="/e-book" className="btn-more">
             See More
           </Link>
         </div>
