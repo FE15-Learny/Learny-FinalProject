@@ -1,4 +1,9 @@
 import React, { useEffect } from "react";
+// import heroBannerImg from "../assets/Img/hero-banner.png";
+// import categoryEbook from "../assets/Img/ctg-ebook.png";
+// import categoryArticle from "../assets/Img/ctg-article.png";
+// import categoryVideo from "../assets/Img/ctg-video.png";
+// import heroBannerImg from "../assets/Img/hero-banner.png";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import "../style/Home.css";
@@ -27,9 +32,7 @@ function Home() {
 
           <div className="hero-banner">
             <img
-              src="src\assets\img\hero-banner.png"
-              alt="hero-banner"
-              className="img-fluid"
+              src="https://i.ibb.co/QJTD5TN/hero-banner.png " alt="hero-banner" className="img-fluid"
             />
           </div>
         </Container>
@@ -54,7 +57,7 @@ function Home() {
               <Col>
                 <div className="category-item">
                   <img
-                    src="src/assets/img/ctg-e-book.png"
+                    src= "https://i.ibb.co/rvFFQtw/ctg-e-book.png"
                     alt="E-book"
                     className="category-item-img"
                   />
@@ -71,7 +74,7 @@ function Home() {
               <Col>
                 <div className="category-item">
                   <img
-                    src="src/assets/img/ctg-article.png"
+                    src="https://i.ibb.co/yBKf7MX/ctg-article.png"
                     alt="Article"
                     className="category-item-img"
                   />
@@ -88,7 +91,7 @@ function Home() {
               <Col>
                 <div className="category-item">
                   <img
-                    src="src/assets/img/ctg-video.png"
+                    src="https://i.ibb.co/Ny5mpcw/ctg-video.png"
                     alt="Videos"
                     className="category-item-img"
                   />
@@ -315,21 +318,21 @@ function Home() {
               {/* Book 1 */}
               <Col className="col-b">
                 <Link to="/e-book/1">
-                  <img src="src/assets/img/book1.png" alt="image-59" border="0" />
+                  <img src="https://i.ibb.co/MpyFxcy/book1.png" alt="image-59" border="0" />
                 </Link>
               </Col>
 
               {/* Book 2 */}
               <Col className="col-b">
               <Link to="/e-book/2">
-                <img src="src/assets/img/book2.jpg" alt="image-59" border="0" />
+                <img src="https://i.ibb.co/0ZzXgT1/book2.jpg" alt="image-59" border="0" />
               </Link>
               </Col>
 
               {/* Book 3 */}
               <Col className="col-b">
               <Link to="/e-book/6">
-                <img src="src/assets/img/book6.png" alt="image-59" border="0" />
+                <img src="https://i.ibb.co/kDJmPsH/book6.png" alt="image-59" border="0" />
               </Link>
               </Col>
             </Row>
