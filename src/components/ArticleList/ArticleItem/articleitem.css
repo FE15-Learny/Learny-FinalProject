@@ -54,3 +54,8 @@
     color: #a9a9a9;
     font-weight: 600;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}

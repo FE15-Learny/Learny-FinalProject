@@ -1,0 +1,22 @@
+.ebook-header {
+  text-align: center;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("https://i.ibb.co/Jpjb0xh/inaki-del-olmo-NIJu-EQw0-RKg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  background-size: cover;
+  min-height: 50vh;
+  padding-top: 17rem;
+}
+.ebook-header h1 {
+  font-size: 3.5rem;
+  color: var(--blue);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.ebook-header p {
+  color: #eee;
+  font-weight: 500;
+  font-size: 1.5rem;
+}

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -15,6 +15,10 @@ function Contact() {
   const [status, setStatus] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const formRef = useRef(null);
+
+  useEffect(() => {
+    navigate("/contact");
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -60,7 +64,7 @@ function Contact() {
           <Col md={6}>
             <div className="text-center" id="desc">
               <span id="title-1">CONTACT</span>
-              <span id="title-2">US</span>
+              <span id="title-2"> US</span>
             </div>
 
             <form id="form" ref={formRef} onSubmit={handleSubmit}>
@@ -100,7 +104,7 @@ function Contact() {
                   onChange={(e) => setStatus(e.target.checked)}
                 />
                 <label htmlFor="status" id="check">
-                The information provided in this form is true and correct.??????????
+                The information provided in this form is true and correct.
                 </label>
               </div>
 

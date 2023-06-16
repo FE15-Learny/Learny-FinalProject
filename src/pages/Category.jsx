@@ -47,7 +47,7 @@ function Category() {
                 />
               </svg>
               <p>500+ E-Books</p>
-              <a href="#" className="btn">
+              <a href="/ebook" className="btn">
                 See All
               </a>
             </div>
