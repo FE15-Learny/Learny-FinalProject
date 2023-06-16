@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Alert, Form, InputGroup } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import '../style/LoginSignup.css';
+import '../style/LoginSignUp.css';
 import { useDispatch } from 'react-redux';
 
 const FormLogin = () => {
