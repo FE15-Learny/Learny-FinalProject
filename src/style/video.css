@@ -1,9 +1,9 @@
-#video-section {
+/* #video-section {
   display: flex;
   align-items: flex-start; 
   margin-bottom: 20px; 
   padding-top: 7rem;
-}
+} */
 
 .video-wrap {
   max-width: 700px;
@@ -15,8 +15,8 @@
   font-size: 2rem;
   color: #a9a9a9;
   font-weight: 500;
-  margin-bottom: 2rem;
-  margin-left: 4rem;
+  margin: 6rem 0 0 8rem;
+  /* margin-left: 4rem; */
   display: block;
 }
 .video-wrap header {
