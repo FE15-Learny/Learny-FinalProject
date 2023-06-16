@@ -1,0 +1,111 @@
+/*-----------------------------------*\
+  #CONTACT
+\*-----------------------------------*/
+#contact {
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #contact-sec {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #contact-img{
+    width: 40%;
+    height: 40%;
+    margin-right: 5%;
+  }
+
+#desc {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#desc #title-2 {
+    color: var(--blue2);
+    font-size: 4rem;
+}
+
+#form {
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#form input {
+    background-color: var(--white);
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+#form input:focus {
+    background-color: var(--white);
+    outline: none;
+    box-shadow: 0 0 5px var(--blue);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+#form textarea {
+    width: 100%;
+    background-color: var(--white);
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+#form textarea:focus {
+    background-color: var(--white);
+    outline: none;
+    box-shadow: 0 0 5px var(--blue);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-checkbox {
+    font-size: 1.3rem;
+    padding-bottom: 3rem;
+}
+
+#submit-form {
+    background-color: #66b1e2;
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#submit-form:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    #contact-img{
+        width: 95%;
+        height: 95%;
+        margin-right: 0;
+       
+      }
+    
+}
