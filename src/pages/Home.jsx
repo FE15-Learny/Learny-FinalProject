@@ -7,7 +7,7 @@ import React, { useEffect } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import "../style/Home.css";
-import "../index.css";
+import "../Index.css";
 
 function Home() {
   const navigate = useNavigate();
