@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import userIcon from "../../../assets/Img/icon-profile.png";
+import userIcon from "../../assets/Img/icon-profile.png";
 import { Link, useNavigate } from 'react-router-dom';
 import { Dropdown } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
