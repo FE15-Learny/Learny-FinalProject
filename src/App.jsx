@@ -9,15 +9,17 @@ import SignUp from './pages/SignUp';
 // import DetailArticle from './pages/DetailArticle';
 import Video from './pages/Video';
 import DetailVideo from './pages/Detail Video';
-// import About from './pages/About';
+import About from './pages/About';
 // import Contact from './pages/Contact';
 import Navbar from './components/Navbar/Navbar'
 import EditProfile from './pages/EditProfile';
 
 
+
 function App() {
   return (
     <>
+        
         <Navbar />
         <Routes>     
         <Route exact path="/" element={<Home />} />
@@ -30,7 +32,7 @@ function App() {
         {/* <Route path="/detail-article" element={<DetailArticle />} /> */}
         <Route path='/video' element={<Video />} />
         <Route path="/Video/:id" element={<DetailVideo />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/editprofile" element={<EditProfile />} />
       </Routes>
