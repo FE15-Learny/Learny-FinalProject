@@ -221,7 +221,7 @@ function Home() {
         <Row className="row-cols-1 row-cols-md-3 g-4" id="card-art">
           <Col>
             <Card className="h-100">
-              <Card.Img variant="top" src="https://i.ibb.co/2kJqJqZ/art3.jpg" alt="art3" border="0" />
+              <Card.Img variant="top" src="https://i.ibb.co/RCW5mSB/art8.jpg" alt="art3" border="0" />
               <Card.Body>
                 <Card.Title>
                 When Front-End Means Full Stack
@@ -243,7 +243,7 @@ function Home() {
                 <br/>
 
                 </Card.Text>
-                <Link to="/article/6" className="btn-article">
+                <Link to="/article/4" className="btn-article">
                   Read More
                 </Link>
               </Card.Body>
@@ -278,7 +278,7 @@ function Home() {
 
           <Col>
             <Card className="h-100">
-              <Card.Img variant="top" src="src/assets/img/art3.jpg" alt="..." />
+              <Card.Img variant="top" src="https://i.ibb.co/wKRw2GH/art2.jpg" />
               <Card.Body>
                 <Card.Title>Dear Junior UI/UX Designer</Card.Title>
                 <div className="user-info">
