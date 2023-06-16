@@ -59,7 +59,7 @@ function Contact() {
       <Container>
         <Row id="contact-sec">
           <Col md={6} id="contact-img">
-            <img src="src\assets\Img\banner.png" alt="Contact" className="img-fluid" />
+            <img src="https://i.ibb.co/QJTD5TN/hero-banner.png" alt="Contact" className="img-fluid" />
           </Col>
           <Col md={6}>
             <div className="text-center" id="desc">

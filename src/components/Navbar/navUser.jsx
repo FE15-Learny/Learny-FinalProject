@@ -98,7 +98,7 @@ const NavUser = () => {
     <header className="header">
       <nav className="navbar">
         <Link to="/" className="logo">
-          <img src="src/assets/img/logo.png" alt="Learny logo" />
+          <img src="https://i.ibb.co/ng4XG2J/logo.png" alt="Learny logo" />
         </Link>
         <ul className="nav-links">
           <li>

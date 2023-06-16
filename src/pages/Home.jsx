@@ -349,7 +349,7 @@ function Home() {
             <span className="blue-text"> WHAT </span>
             <span className="black-text"> IS </span>
             <img
-              src="src/assets/img/logo.png"
+              src="https://i.ibb.co/ng4XG2J/logo.png"
               alt="Learny logo"
               className="logo-about"
             />
