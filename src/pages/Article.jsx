@@ -5,7 +5,7 @@ import HeaderArticle from "../components/HeaderArticle";
 import SearchBar from "../components/Home/SearchBar";
 import EmptyList from "../components/common/EmptyList";
 import axios from "axios";
-import '../style/Article.css';
+import "../style/Article.css";
 
 function Article() {
   const [articles, setArticles] = useState(articlelist);
@@ -38,6 +38,7 @@ function Article() {
           "https://64833958f2e76ae1b95c29a5.mockapi.io/articles"
         );
         setArticles(response.data);
+        console.log(response.data);
         setIsLoading(false);
       } catch (error) {
         console.error(error);
@@ -50,7 +51,7 @@ function Article() {
   return (
     <div>
       <HeaderArticle />
-      <div className="container article"> 
+      <div className="container article">
         <SearchBar
           value={searchKey}
           clearSearch={handleClearSearch}

@@ -74,7 +74,7 @@ function Category() {
                 />
               </svg>
               <p>500+ Articles</p>
-              <a href="#" className="btn">
+              <a href="/article" className="btn">
                 See All
               </a>
             </div>
@@ -101,7 +101,7 @@ function Category() {
                 />
               </svg>
               <p>500+ Videos</p>
-              <a href="#" className="btn">
+              <a href="/video" className="btn">
                 See All
               </a>
             </div>
