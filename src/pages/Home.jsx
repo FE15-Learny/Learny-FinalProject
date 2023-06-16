@@ -3,8 +3,6 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import "../style/Home.css";
 import "../index.css";
-import Navbar from '../components/Navbar/Navbar';
-
 
 function Home() {
   const navigate = useNavigate();
@@ -14,7 +12,6 @@ function Home() {
   }, []);
 
   return (
-  
     <div>
       <section id="hero">
         <Container className="d-flex align-items-center">
@@ -124,22 +121,23 @@ function Home() {
                     <iframe
                       width="100%"
                       height="auto"
-                      src="https://www.youtube.com/embed/o1IaduQICO0"
+                      src="https://www.youtube.com/embed/oYRda7UtuhA"
                       frameBorder="0"
                       allowFullScreen
                     ></iframe>
                   </div>
                   <Card.Body>
-                    <Card.Title>
-                      JavaScript Full Course
-                      <br />
-                      JavaScript Tutorial For Beginners
+                    <Card.Title id="vid-card-title">
+                    <Link to="/video/7" style={{ textDecoration: 'none' }}>
+                      How To Make Website Using HTML & CSS Multi Page Website Design
+                      
+                      </Link>
                     </Card.Title>
                     <Card.Text>
-                      This Edureka video on "JavaScript full course" is a
-                      complete guide to JavaScript which covers in-depth
-                      knowledge about data types, variables, functions, event
-                      handling, form validation, etc.
+                    In this comprehensive video tutorial, you will gain hands-on 
+                    experience in creating a complete website design using HTML and CSS. 
+                    We will guide step by step through the process.
+
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -152,20 +150,21 @@ function Home() {
                     <iframe
                       width="100%"
                       height="auto"
-                      src="https://www.youtube.com/embed/_oO4Qi5aVZs"
+                      src="https://www.youtube.com/embed/qz0aGYrrlhU"
                       frameBorder="0"
                       allowFullScreen
                     ></iframe>
                   </div>
                   <Card.Body>
-                    <Card.Title>
-                      Build and Deploy a Fully Responsive Website with Modern
-                      UI/UX
+                    <Card.Title id="vid-card-title">
+                    <Link to="/video/5" style={{ textDecoration: 'none' }}>
+                    HTML Tutorial for Beginners: HTML Crash Course
+                      </Link>
                     </Card.Title>
                     <Card.Text>
-                      Master modern web development by building a responsive
-                      React JS application consisting of a stunning hero
-                      section, high-quality assets, business status, and more!
+                    Welcome to the HTML Tutorial for Beginners! In this crash course, 
+                    we will take you on an exciting journey through the world of HTML 
+                    (Hypertext Markup Language).
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -178,27 +177,30 @@ function Home() {
                     <iframe
                       width="100%"
                       height="auto"
-                      src="https://www.youtube.com/embed/Q33KBiDriJY"
+                      src="https://www.youtube.com/embed/_oO4Qi5aVZs"
                       frameBorder="0"
                       allowFullScreen
                     ></iframe>
                   </div>
                   <Card.Body>
-                    <Card.Title>
-                      Web Development Full Course - 10 Hours Learn Web
-                      Development from Scratch
+                    <Card.Title id="vid-card-title">
+                    <Link to="/video/6" style={{ textDecoration: 'none' }}>
+                      Build and Deploy a Fully Responsive Website with Modern
+                      UI/UX
+                      </Link>
                     </Card.Title>
                     <Card.Text>
-                      This Edureka Web Development Full Course video will help
-                      you understand and learn Web Development in detail. This
-                      Tutorial is ideal for beginners as well as professionals.
+                      Master modern web development by building a responsive
+                      React JS application consisting of a stunning hero
+                      section, high-quality assets, business status, and more!
                     </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
             </Row>
+              
 
-            <Link to="/Ebook" className="btn-more">
+            <Link to="/video" className="btn-more">
               See More
             </Link>
           </div>
@@ -219,27 +221,29 @@ function Home() {
         <Row className="row-cols-1 row-cols-md-3 g-4" id="card-art">
           <Col>
             <Card className="h-100">
-              <Card.Img variant="top" src="src/assets/img/art1.jpg" alt="..." />
+              <Card.Img variant="top" src="https://i.ibb.co/2kJqJqZ/art3.jpg" alt="art3" border="0" />
               <Card.Body>
                 <Card.Title>
-                  Write Code that is Easy to Delete, Not Easy to Extend
+                When Front-End Means Full Stack
                 </Card.Title>
                 <div className="user-info">
                   <img
-                    src="src/assets/img/icon-profile.png"
+                    src="https://i.ibb.co/LtHH2BW/download.jpg" 
                     alt="Circle-icons-profile-svg"
                     border="0"
                   />
-                  <span>JAROT DIAN S.</span>
-                  <span>Sep 14, 2020</span>
+                  <span>Chris Coyier</span>
+                  <span>May 20, 2020</span>
                 </div>
                 <Card.Text>
-                  You don’t need to throw it all away but you will need to
-                  delete some of it. Good code isn’t about getting it right the
-                  first time. Good code is just legacy code that doesn’t get in
-                  the way. Good code is easy to delete.
+                Frontend development is at the intersection of art and logic, 
+                business and expression, left brain and right brain, design and 
+                nerdery.
+                <br/>
+                <br/>
+
                 </Card.Text>
-                <Link to="/DetailArticle" className="btn-article">
+                <Link to="/article/6" className="btn-article">
                   Read More
                 </Link>
               </Card.Body>
@@ -248,26 +252,24 @@ function Home() {
 
           <Col>
             <Card className="h-100">
-              <Card.Img variant="top" src="src/assets/img/art2.jpg" alt="..." />
+              <Card.Img variant="top" src="https://i.ibb.co/6ZBHQG7/art4.jpg" />
               <Card.Body>
-                <Card.Title>The New Business of AI</Card.Title>
+                <Card.Title>Hierarchy Strips in User Interfaces</Card.Title>
                 <div className="user-info">
                   <img
-                    src="src/assets/img/icon-profile.png"
+                    src="https://i.ibb.co/ygRPwbZ/download.jpg"
                     alt="Circle-icons-profile-svg"
                     border="0"
                   />
-                  <span>JAROT DIAN S.</span>
-                  <span>Sep 14, 2020</span>
+                  <span>Michal Malewicz</span>
+                  <span>Dec 13, 2022</span>
                 </div>
                 <Card.Text>
-                  At a technical level, artificial intelligence seems to be the
-                  future of software. AI is showing remarkable progress on a
-                  range of difficult computer science problems, and the job of
-                  software developers who now work with data as much as source
-                  code is changing fundamentally.
+                Presenting your work is essential on every stage of your design career. 
+                Whether you’re working with developers, clients, stakeholders or just trying 
+                to get your portfolio to have the most impact.
                 </Card.Text>
-                <Link to ="/DetailArticle" className="btn-article">
+                <Link to="/article/3" className="btn-article">
                   Read More
                 </Link>
               </Card.Body>
@@ -278,25 +280,23 @@ function Home() {
             <Card className="h-100">
               <Card.Img variant="top" src="src/assets/img/art3.jpg" alt="..." />
               <Card.Body>
-                <Card.Title>When Front-End Means Full Stack</Card.Title>
+                <Card.Title>Dear Junior UI/UX Designer</Card.Title>
                 <div className="user-info">
                   <img
-                    src="src/assets/img/icon-profile.png"
+                    src="https://i.ibb.co/gRRZFdc/download.jpg"
                     alt="Circle-icons-profile-svg"
                     border="0"
                   />
-                  <span>JAROT DIAN S.</span>
-                  <span>Sep 14, 2020</span>
+                  <span>Ruqayyah Yaro</span>
+                  <span>July 20, 2022</span>
                 </div>
                 <Card.Text>
-                  Being a front-end developer puts us between the thing we’re
-                  building and the people we’re building it for and that’s a
-                  place some of us really enjoy being, even if it means taking
-                  on ever-larger bundles of responsibility from that big
-                  haystack of work. Weighty stuff, isn’t it?
+                If you feel lost and overwhelmed and have been looking for 
+                a guide or a little pick me up, this post is for you and I hope 
+                it gives you the clarity and answers you need.
                 </Card.Text>
 
-                <Link to="/DetailArticle" className="btn-article">
+                <Link to="/article/2" className="btn-article">
                   Read More
                 </Link>
               </Card.Body>
@@ -310,25 +310,31 @@ function Home() {
           <div className="popbook-title">
             <h1>OUR POPULAR E-BOOKS</h1>
           </div>
-          <Container>
+          <div className="container">
             <Row className="row-b">
               {/* Book 1 */}
               <Col className="col-b">
-                <img src="src/assets/img/book1.jpg" alt="image-59" border="0" />
+                <Link to="/e-book/1">
+                  <img src="src/assets/img/book1.png" alt="image-59" border="0" />
+                </Link>
               </Col>
 
               {/* Book 2 */}
               <Col className="col-b">
+              <Link to="/e-book/2">
                 <img src="src/assets/img/book2.jpg" alt="image-59" border="0" />
+              </Link>
               </Col>
 
               {/* Book 3 */}
               <Col className="col-b">
-                <img src="src/assets/img/book4.jpg" alt="image-59" border="0" />
+              <Link to="/e-book/6">
+                <img src="src/assets/img/book6.png" alt="image-59" border="0" />
+              </Link>
               </Col>
             </Row>
-          </Container>
-          <Link to="/Ebook" className="btn-more">
+          </div>
+          <Link to="/e-book" className="btn-more">
             See More
           </Link>
         </div>

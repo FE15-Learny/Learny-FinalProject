@@ -1,9 +1,53 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { Dropdown } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux';
+import axios from 'axios';
+
 import './Navbar.css';
 
 const NavUser = () => {
+  const user = localStorage.getItem('user-info') ? JSON.parse(localStorage.getItem('user-info')) : {
+    name: '',
+    email: ''
+  }
+  // const [userData, setUserData] = useState({
+  //   name: '',
+  //   email: ''
+  // })
+  // const user = useSelector(state => state);
+  const dispatch = useDispatch()
   const navigate = useNavigate();
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [username, setUsername] = useState('');
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          'https://64670f90ba7110b663ae7915.mockapi.io/pengguna'
+        );
+        if (response.data.length > 0) {
+          const email = JSON.parse(localStorage.getItem('user-info'))?.email;
+          setUsername(getUsernameByEmail(response.data, email));
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const handleLogout = () => {
+    dispatch({ type: 'remove-user' })
+    localStorage.removeItem('user-info')
+    navigate('/');
+  };
 
   useEffect(() => {
     const handleHamburgerClick = () => {
@@ -17,9 +61,11 @@ const NavUser = () => {
     };
 
     const handleProfileButtonClick = () => {
-      navigate('/editprofile');
+      const dropdownMenu = document.querySelector('.profile-dropdown-menu');
+      if (dropdownMenu) {
+        dropdownMenu.classList.toggle('show-menu');
+      }
     };
-    
 
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const profileButton = document.querySelector('#profile');
@@ -43,6 +89,11 @@ const NavUser = () => {
     };
   }, []);
 
+  const getUsernameByEmail = (data, email) => {
+    const user = data.find((user) => user.email === email);
+    return user ? user.name : '';
+  };
+
   return (
     <header className="header">
       <nav className="navbar">
@@ -54,7 +105,7 @@ const NavUser = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/video">Category</Link>
+            <Link to="/category">Category</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -65,12 +116,23 @@ const NavUser = () => {
         </ul>
 
         <div className="nav-btn">
-          <button id="profile">
-            <img src="src/assets/img/icon-profile.png" width="30" alt="username" />
-            Skilvul - FE 15
-          </button>
-        </div>
+          <Dropdown show={showDropdown} onClick={toggleDropdown}>
+            <div id="profile">
+              <img
+                src="src/assets/img/icon-profile.png"
+                width={30}
+                height={30}
+                // alt="username"
+              />
+              <p id="username">{user.name}</p>
+            </div>
 
+            <Dropdown.Menu>
+              <Dropdown.Item href="/editprofile">Edit Profile</Dropdown.Item>
+              <Dropdown.Item onClick={handleLogout}>Log Out</Dropdown.Item> {/* Menambahkan onClick handleLogout */}
+            </Dropdown.Menu>
+          </Dropdown>
+        </div>
         <div className="hamburger-menu">
           <span></span>
           <span></span>

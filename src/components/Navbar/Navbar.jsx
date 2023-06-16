@@ -1,30 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import NavGuest from './navGuest.jsx';
 import NavUser from './navUser.jsx';
 import './Navbar.css';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const user = useSelector((state) => state);
+  const dataUser = localStorage.getItem('user-info') ? JSON.parse(localStorage.getItem('user-info')) : undefined;
 
-  const handleLoginStatus = () => {
-    setIsLoggedIn(!isLoggedIn);
-  };  
+  const handleRenderNav = () => {
+    if (user?.email || dataUser)     return <NavUser />
 
-  useEffect(() => {
-    const userLoggedIn = localStorage.getItem('user-info');
-    console.log('userLoggedIn:', userLoggedIn);
-    setIsLoggedIn(userLoggedIn !== null);
-  }, []);
+    return  <NavGuest />
+  }
+
+  console.log(user, 'user')
   
-
   return (
     <header className="header">
       <nav className="navbar">
-        {isLoggedIn ? <NavUser /> : <NavGuest />}
+        {handleRenderNav()}
       </nav>
-      <button onClick={handleLoginStatus}>
-        {isLoggedIn ? 'Logout' : 'Login'}
-      </button>
     </header>
   );
 };
