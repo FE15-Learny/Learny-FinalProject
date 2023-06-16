@@ -29,7 +29,7 @@ function Articledetails() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container article-detail">
       <Link className="article-goback" to="/article">
         <span> &#8592;</span> <span>Go Back</span>
       </Link>

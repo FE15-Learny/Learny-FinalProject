@@ -20,11 +20,13 @@
     font-weight: 600;
     color: var(--light-black);
 }
-.about-left p {
-    color: #656464;
-    font-size: 1.2rem;
-    text-align: justify;
+
+.container.about .about-left p {
+  color: #656464;
+  font-size: 1.2rem;
+  text-align: justify;
 }
+
 .about-right {
   flex-basis: 32%;
 }
