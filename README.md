@@ -1,5 +1,5 @@
 # Learny-FinalProject
 
-Navbar
-Homepage
+- Navbar
+- Homepage
 
