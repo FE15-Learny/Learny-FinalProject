@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from 'react-markdown'
 import Chip from "../components/common/Chip";
 import EmptyList from "../components/common/EmptyList";
-import '../style/Article.css';
+// import '../style/Article.css';
 import axios from "axios";
 
 function Articledetails() {

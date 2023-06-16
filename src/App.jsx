@@ -7,14 +7,13 @@ import SignUp from './pages/SignUp';
 // import DetailEbook from './pages/DetailEbook';
 import Article from './pages/Article';
 import Articledetails from "./pages/Articledetails";
-
 import Video from './pages/Video';
-import DetailVideo from './pages/Detail Video';
+import DetailVideo from './pages/DetailVideo';
 import About from './pages/About';
 // import Contact from './pages/Contact';
 import Navbar from './components/Navbar/Navbar'
 import EditProfile from './pages/EditProfile';
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 
 function App() {
@@ -40,7 +39,7 @@ function App() {
         <Route path="/editprofile" element={<EditProfile />} />
       </Routes>
 
-  <Footer />
+  {/* <Footer /> */}
 
 
     </>
