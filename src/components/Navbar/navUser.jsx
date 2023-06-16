@@ -105,7 +105,7 @@ const NavUser = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/category">Category</Link>
+            <Link to="/video">Category</Link>
           </li>
           <li>
             <Link to="/about">About</Link>

@@ -4,11 +4,10 @@ import { Alert, Form, InputGroup } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import '../style/LoginSignup.css';
-
-{/* <br> </br> */}
-{/* <br> </br> */}
+import { useDispatch } from 'react-redux';
 
 const FormLogin = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const [users, setUsers] = useState([]);
   const [email, setEmail] = useState('');
@@ -63,8 +62,9 @@ const FormLogin = () => {
     const user = users.find((item) => item.email === email && item.password === password);
     if (user) {
       localStorage.setItem('user-info', JSON.stringify(user));
+      dispatch({ type: 'add-user', payload: {...user} })
       successLogin();
-      navigate('/home');
+      navigate('/');
     } else {
       setUserNotFound(true);
     }

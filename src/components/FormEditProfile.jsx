@@ -1,27 +1,23 @@
 import axios from 'axios';
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 
 const FormEditProfile = () => {
-  const dispatch = useDispatch()
     const dataUser = JSON.parse(localStorage.getItem('user-info'));
     const [name, setName] =  useState(dataUser.name)
     const [email, setEmail] =  useState(dataUser.email)
     const navigate = useNavigate();
 
+    console.log(dataUser, 'user')
+
 
     const newUser = {
-      id: dataUser.id,
         name: name,
         email: email,
        
       };
-
-
-
 
       const alert = () => {
         const swalWithBootstrapButtons = Swal.mixin({
@@ -44,17 +40,16 @@ const FormEditProfile = () => {
           });
       };
 
-const Update = async (event) => {
+const Update = (event) => {
     event.preventDefault();
     try {
-        await axios.put(`https://64670f90ba7110b663ae7915.mockapi.io/pengguna/${dataUser.id}`, newUser)
-        dispatch({ type: 'add-user', payload: newUser })
-        localStorage.setItem('user-info', JSON.stringify(newUser))
+        axios.put(`https://64670f90ba7110b663ae7915.mockapi.io/pengguna/${dataUser.id}`, newUser)
       alert();
     } catch (error) {
       console.log(error);
     }
   };
+
 
 
 
