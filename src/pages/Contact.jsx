@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
 import '../style/Contact.css';
-import '../index.css';
+import '../Index.css';
 
 function Contact() {
   const navigate = useNavigate();
