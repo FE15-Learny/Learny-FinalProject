@@ -92,3 +92,18 @@
   /* ... */
 }
 
+@media (max-width: 768px) {
+  .video-wrap {
+    margin: 0 14%;
+  }
+}
+
+@media (max-width: 576px) {
+  .video-wrap {
+    margin: 0 8%;
+  }
+
+  .video-goBack {
+  margin: 6rem 0 0 4rem;
+  }
+}
