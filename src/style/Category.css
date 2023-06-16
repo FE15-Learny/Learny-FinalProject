@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --light-black: #585858;
+  --light-bg: #e4f5ff;
+  --blue: #56c0ff;
+  --blue2: #7fbadf;
+  --blue3: #7fb9df;
+  --light-blue: #e4f5ff;
+  --orange: #ffdba4;
+  --peach: #ffc7c7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.5s linear;
+}
+
+*::selection {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+::-webkit-scrollbar track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar thumb {
+  background-color: var(--black);
+  border-radius: 5rem;
+}
+
+body {
+  background-color: var(--white);
+}
+
+section {
+  margin: 0 auto;
+  padding: 1rem;
+  padding-left: 0;
+}
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--white);
+  padding: 2rem 10rem;
+}
+
+/*-----------------------------------*\
+#NAVBAR
+\*-----------------------------------*/
+
+.navbar a:focus,
+.navbar a:hover {
+  color: var(--blue);
+}
+
+.navbar a:focus:after,
+.navbar a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.navbar a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--blue);
+  transition: width 400ms ease-in-out, left 400ms ease-in-out;
+}
+
+.nav-btn #signup,
+.nav-btn #login {
+  width: 105px;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 1rem;
+  border-radius: 12px;
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out,
+    box-shadow 400ms ease-in-out, border-color 400ms ease-in-out;
+}
+
+.nav-btn #signup {
+  color: var(--blue);
+  border-style: solid;
+  border-color: var(--blue);
+  background-color: var(--white);
+}
+
+.nav-btn #signup:hover {
+  background-image: none;
+  background-color: var(--orange);
+  color: var(--black);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-color: var(--orange);
+}
+
+.nav-btn #login {
+  margin-left: 2rem;
+  color: var(--white);
+  border: 0;
+  background-image: linear-gradient(
+    144deg,
+    var(--peach),
+    10%,
+    var(--blue),
+    var(--orange)
+  );
+}
+
+.nav-btn #login:hover {
+  background-image: none;
+  background-color: var(--orange);
+  color: var(--black);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+  width: 90%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  margin-left: 5rem;
+  padding-top: 1rem;
+  color: var(--light-black);
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition: color 400ms ease-in-out;
+  text-decoration: none;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: var(--blue2);
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -30%;
+    width: 30%;
+    height: 100vh;
+    padding-top: 20%;
+    background-color: #eeeeee;
+    text-align: left;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    visibility: hidden;
+  }
+  .show-menu .nav-links {
+    right: 0;
+    visibility: visible;
+  }
+  .nav-links li {
+    margin: 0.7rem 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 2rem 3rem;
+  }
+  .nav-links {
+    right: -40%;
+    width: 40%;
+    height: 100vh;
+  }
+  .logo img {
+    width: 70%;
+  }
+  .nav-btn #signup,
+  .nav-btn #login {
+    width: 90px;
+    font-size: 1.4rem;
+  }
+}
+
+/*-----------------------------------*\
+  #CATEGORY
+\*-----------------------------------*/
+#cat {
+  box-sizing: border-box;
+  height: 70vh;
+  padding: 0px 100px;
+  padding-top: 15px;
+  background-color: rgba(127, 185, 223, 1);
+  border-radius: 50px 50px 0px 0px;
+  color: white;
+  border-bottom: 30px solid rgba(96, 150, 180, 1);
+  margin-bottom: -180px;
+}
+.cat-judul {
+  color: white;
+  text-align: center;
+  padding-top: 10rem;
+}
+.cat-judul h1 {
+  font-size: 65px;
+  border-bottom: 5px solid white;
+  font-family: "Tilt Warp", cursive;
+  margin: 0px 370px;
+}
+.cat-judul p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+/*-----------------------------------*\
+  #CARD CATEGORY
+\*-----------------------------------*/
+#card {
+  box-sizing: border-box;
+  height: 82vh;
+  padding: 0px 100px;
+  padding-top: 15px;
+}
+
+.roa {
+  flex: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 1cm;
+}
+.b-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20px;
+  background: white;
+  box-shadow: -3px 3px 5px black;
+  padding: 10px 30px;
+  align-self: normal;
+  border-radius: 20px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.b-card img {
+  max-width: 220px;
+}
+.b-card h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  margin: 10px 0;
+  padding-bottom: 0px;
+}
+.b-card p {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0px;
+  font-size: 12px;
+  text-align: justify;
+  padding-top: 4px;
+}
+.bottom a {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  padding-left: 0 px;
+  background-color: black;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 9px;
+  margin-top: -3px;
+  cursor: pointer;
+}
+.bottom a:hover {
+  background-color: white;
+  color: black;
+  outline: 2px solid black;
+}
+.bottom p {
+  padding-right: 50px;
+  padding-left: 2px;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.foot p {
+  font-size: 10px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 786px) {
+  #cat {
+    padding: 0px;
+    padding-right: 0cm;
+    margin: 15px -10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cat-judul {
+    padding-top: 3.5cm;
+  }
+  .cat-judul h1 {
+    font-size: 5.5rem;
+    border-bottom: 3.5px solid white;
+  }
+  .cat-judul p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .container {
+    width: 75px;
+  }
+  .roa {
+    padding-right: 0cm;
+    justify-content: center;
+  }
+  .b-card {
+    padding: 20px 4px;
+  }
+  .b-card img {
+    width: 150px;
+  }
+  .b-card h4 {
+    font-size: 16px;
+    margin-bottom: -5px;
+  }
+  .b-card p {
+    font-size: 7px;
+    padding: 10px 20px;
+    padding-bottom: 25px;
+  }
+  .bottom p {
+    padding: 6px 2px;
+    padding-right: 40px;
+  }
+  .bottom a {
+    font-size: 8px;
+    padding: -16px -5px;
+    border-radius: 5px;
+  }
+  #footer {
+    margin-top: 450px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #cat {
+    padding: 0px;
+    padding-right: 0cm;
+    margin: 15px -10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cat-judul {
+    padding-top: 2.7cm;
+  }
+  .cat-judul h1 {
+    font-size: 3.5rem;
+    border-bottom: 2px solid white;
+  }
+  .cat-judul p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .container {
+    width: 75px;
+  }
+  .roa {
+    padding-right: 0cm;
+    justify-content: center;
+  }
+  #card {
+    padding-bottom: 10cm;
+  }
+  .b-card {
+    padding: 20px 4px;
+  }
+  .b-card img {
+    width: 150px;
+  }
+  .b-card h4 {
+    font-size: 16px;
+    margin-bottom: -5px;
+  }
+  .b-card p {
+    font-size: 7px;
+    padding: 10px 20px;
+    padding-bottom: 25px;
+  }
+  .bottom p {
+    padding: 6px 2px;
+    padding-right: 40px;
+  }
+  .bottom a {
+    font-size: 8px;
+    padding: -16px -5px;
+    border-radius: 5px;
+  }
+  #footer {
+    margin-top: 650px;
+  }
+}
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+#footer {
+  background-color: var(--light-blue);
+}
+
+#logo img {
+  padding-top: 5%;
+}
+
+#logo h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#menu h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+#menu ul li {
+  margin-bottom: 1rem;
+}
+
+#menu a {
+  color: var(--light-black);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#partner {
+  padding-left: 20rem;
+  padding-top: -1rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+#partner h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+#partner img {
+  margin: 2rem;
+}
+
+#partner a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #1e0303;
+}
+
+/*-----------------------------------*\
+#FOOTER BOTTOM
+\*-----------------------------------*/
+footer {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: var(--blue3);
+  color: #ffffff;
+  /* padding: 1px; */
+}

@@ -1,0 +1,504 @@
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+#hero {
+    background-color: var(--light-blue);
+}
+
+.hero-content {
+    margin: 0rem 0 80px;
+    flex: 1;
+    background-color: var(--light-blue);
+    position: relative;
+}
+
+.hero-content::before,
+.hero-content::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1rem;
+}
+
+.hero-content::before {
+    top: 0;
+    background-color: #FFC7C7;
+}
+
+.hero-content::after {
+    bottom: 0;
+    background-color: #FFDBA4;
+}
+
+.hero-title {
+    padding-top: 4rem;
+    color: var(--black);
+    font-size: 4.7rem;
+    font-weight: 800;
+}
+
+.hero-title #title-2 {
+    color: var(--blue2);
+}
+
+.hero-text {
+    padding: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.hero-banner {
+    width: 600px;
+}
+
+@media only screen and (max-width: 768px) {
+    #hero {
+        padding: var(--section-padding) 0 0;
+        padding-top: 10rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-text {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    
+    .hero-banner {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #hero {
+        padding-top: 10rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-text {
+        font-size: 1.3rem;
+    }
+}
+
+
+/*-----------------------------------*\
+  #CATEGORY
+\*-----------------------------------*/
+#category {
+    padding: 10rem 0;
+    text-align: center;
+    background-color: var(--white);
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-content {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.category-title {
+    padding-top: 3rem;
+    font-size: 4rem;
+    color: var(--black);
+    font-weight: 800;
+  }
+
+  .category-title #title-2 {
+    color: var(--blue2);
+  }
+  
+.category-desc {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.learning-categories {
+    padding: 3rem 0;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.category-item {
+    flex: 1;
+    display: flex;
+    padding: 2rem;
+    text-align: justify;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 3rem;
+    font-size: 1.6rem;
+  }
+
+  .category-item-img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-right: 1rem;
+}
+
+.category-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category-item-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #7FBADF;
+    margin-bottom: 0;
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.category-item-desc {
+    font-size: 1.4rem;
+    color: var(--black);
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .category-item {
+        height: 172px;
+    }
+
+    .category-item-img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/*-----------------------------------*\
+  #POPULAR VIDEOS
+\*-----------------------------------*/
+#pop-videos {
+    padding: 6rem;
+    margin: 0 10rem;
+    text-align: center;
+    background-image: url('https://i.ibb.co/q1G9Wss/bgpopvid.png');
+    background-size: 100% 100%;
+}
+
+  .popvid-title h1 {
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    color: var(--white);
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .col-vid {
+    width: calc(100% / 3);
+    padding: 1rem;
+  }
+
+  .row-vid {
+    padding-bottom: 4rem;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    background: var(--light-bg);
+    border-radius: 1.25%;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    transition: box-shadow .3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .card-img-top iframe {
+    height: 100%;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  #vid-card-title a {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--black);
+  }
+  
+  #vid-card-title a:hover {
+    color:var(--light-black);
+  }
+  .card-text {
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: justify;
+  }
+
+  .btn-more {
+    background: #f3f7fe;
+    color: var(--blue2);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: .3s;
+    text-decoration: none;
+  }
+  
+  .btn-more:hover {
+    background: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    #pop-videos {
+        margin: 0 14%;
+      }
+
+    .col-vid {
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #pop-videos {
+        margin: 0 8%;
+      }
+
+    .col-vid {
+        width: 100%;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+}
+
+/*-----------------------------------*\
+  #RECOMMENDED ARTICLE
+\*-----------------------------------*/
+#rec-articles {
+    padding: 10rem 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.articles-content {
+    margin-bottom: 3rem;
+}
+
+.article-title {
+    padding-top: 3rem;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--black);
+    text-align: center;
+}
+
+.article-title #title-2 {
+    color: var(--blue2);
+}
+
+#card-art {
+    padding: 0 15rem;
+}
+
+#card-art .card-text {
+    text-align: justify;
+    padding: 0.7rem 0 3rem;
+}
+
+.card-title.h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.card-title.h5 :hover{
+    color:var(--light-black);
+    cursor: pointer;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.user-info img {
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.user-info span {
+    margin-left: 0.5rem;
+    color: #7b838a;
+    font-size: 1.2rem;
+}
+
+.user-info span:last-child {
+    color: #548dc9;
+}
+
+
+
+.btn-article {
+    background-color: var(--blue3);
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.btn-article:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    #rec-articles {
+        margin: 0 14%;
+    }
+    #card-art {
+        padding: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    #rec-articles {
+        margin: 0 8%;
+    }
+    #card-art {
+        padding: 3rem;
+    }
+}
+
+/*-----------------------------------*\
+  #POPULAR BOOKS
+\*-----------------------------------*/
+#pop-books {
+    padding: 6rem;
+    margin: 0 10rem;
+    text-align: center;
+    background-image: url('https://i.ibb.co/q1G9Wss/bgpopvid.png');
+    background-size: 100% 100%;
+}
+    
+.popbook-title h1 {
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    .row-b {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    .col-b {
+    width: calc(100% / 3);
+    }
+    
+    .col-b img {
+    width: 70%;
+    padding-bottom: 3rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        #pop-books{
+            margin: 0 14%;
+        }
+        .row-b {
+          flex-direction: column; 
+        }
+      
+        .col-b {
+          width: 100%;
+          padding-bottom: 3rem;
+        }
+      
+        .col-b img {
+          width: 70%;
+          margin: 0 auto; 
+        }
+      }
+ 
+    @media only screen and (max-width: 576px) {
+        #pop-books {
+            margin: 0 8%;
+        }
+    
+        .popbook-title {
+            font-size: 2rem;
+        }
+    }
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+#about {
+    padding: 13rem 10rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.about-title {
+    font-size: 4rem;
+    color: var(--black);
+    font-weight: 800;
+}
+
+.blue-text {
+    color: var(--blue2);
+    margin-right: 2rem;
+}
+
+.black-text, .blue-text {
+    margin-right: 2rem;
+}
+
+.logo-about {
+    margin-right: 2rem;
+}
+
+#about #description {
+    padding-top: 5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--black);
+}

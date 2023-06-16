@@ -1,0 +1,43 @@
+
+.container-form2 {
+  margin: 0 450px;
+}
+
+
+.container-form {
+  margin: 0 200px;
+}
+.form-control {
+  border: 2px solid black !important;
+}
+.icon-eye {
+  border: 2px solid black !important;
+}
+.btn-form {
+  background-color: #66b1e2 !important;
+  color: white !important;
+  border: 2px solid #66b1e2 !important;
+}
+.btn-form:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s ease-in-out;
+}
+.toggle-group {
+  margin: 0 auto;
+  width: 25%;
+}
+.btn-toggle {
+  background: white !important;
+}
+.btn-toggle-active {
+  background: #096dd9 !important;
+}
+@media only screen and (max-width: 767px) {
+  .container-form {
+    margin: 0;
+  }
+  .toggle-group {
+    margin: 0;
+    width: 100%;
+  }
+}

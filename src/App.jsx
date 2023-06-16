@@ -1,34 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import Category from "./pages/Category";
+import Ebook from "./pages/Ebook";
+import Ebookdetails from "./pages/Ebookdetails";
+import Article from "./pages/Article";
+import Articledetails from "./pages/Articledetails";
+import Video from "./pages/Video";
+import DetailVideo from "./pages/Detail Video";
+import About from "./pages/About";
+import Contact from './pages/Contact';
+import Navbar from "./components/Navbar/Navbar";
+import EditProfile from "./pages/EditProfile";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/category" element={<Category />} />
+        <Route path="/ebook" element={<Ebook />} />
+        <Route path="/ebook/:ebookId" element={<Ebookdetails />} />
+        <Route path="/article" element={<Article />} />
+        <Route path="/article/:articleId" element={<Articledetails />} />
+        <Route path="/video" element={<Video />} />
+        <Route path="/Video/:id" element={<DetailVideo />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/editprofile" element={<EditProfile />} />
+      </Routes>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

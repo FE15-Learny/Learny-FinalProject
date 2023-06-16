@@ -1,0 +1,36 @@
+.sub-header {
+  min-height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(48, 49, 52, 0.7),
+      rgba(36, 38, 45, 0.7)
+    ),
+    url("https://i.ibb.co/s3GdpG1/concentrated-man-enjoying-reading-book.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.about-left {
+  flex-basis: 60%;
+}
+.about-left h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--light-black);
+}
+
+.container.about .about-left p {
+  color: #656464;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.about-right {
+  flex-basis: 32%;
+}
+.about-right img {
+  width: 100%;
+  margin-left: 8rem;
+}
