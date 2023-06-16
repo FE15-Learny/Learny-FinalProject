@@ -7,8 +7,8 @@ import SignUp from './pages/SignUp';
 // import DetailEbook from './pages/DetailEbook';
 // import Article from './pages/Article';
 // import DetailArticle from './pages/DetailArticle';
-// import Video from './pages/Video';
-// import DetailVideo from './pages/DetailVideo';
+import Video from './pages/Video';
+import DetailVideo from './pages/DetailVideo';
 // import About from './pages/About';
 // import Contact from './pages/Contact';
 import Navbar from './components/Navbar/Navbar'
@@ -28,8 +28,8 @@ function App() {
         {/* <Route path="/detail-book" element={<DetailEbook />} /> */}
         {/* <Route path="/article" element={<Article />} /> */}
         {/* <Route path="/detail-article" element={<DetailArticle />} /> */}
-        {/* <Route path="/video" element={<Video />} /> */}
-        {/* <Route path="/detail-video" element={<DetailVideo />} /> */}
+        <Route path='/video' element={<Video />} />
+        <Route path="/Video/:id" element={<DetailVideo />} />
         {/* <Route path="/about" element={<About />} /> */}
         {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/editprofile" element={<EditProfile />} />

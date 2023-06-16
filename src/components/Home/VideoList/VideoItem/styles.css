@@ -1,0 +1,74 @@
+.videoItem-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.videoItem-cover {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.videoItem-wrap h3 {
+  margin: 0.5rem 0 1rem 0;
+  flex: 1;
+}
+
+.videoItem-wrap footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+
+.videoItem-author {
+  display: flex;
+  align-items: center;
+}
+
+.videoItem-author img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+.videoItem-author p {
+  font-size: 0.6rem;
+  color: #a9a9a9;
+  font-weight: 600;
+}
+
+.videoItem-authorInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+
+.videoItem-authorInfo h6,
+.videoItem-authorInfo p {
+  margin: 0;
+}
+
+.videoItem-authorInfo h6 {
+  font-size: 1.3rem;
+}
+.videoItem-authorInfo p {
+  font-size: 1rem;
+  color: #a9a9a9;
+  font-weight: 600;
+}
+
+.title-vid {
+  color: #3b3b3b;
+  text-shadow: 0.6px 1px 1px rgba(5, 18, 57, 0.5);
+  font-weight: 600;
+  text-align: justify;
+}
