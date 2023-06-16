@@ -50,9 +50,9 @@ function Category() {
                 />
               </svg>
               <p>500+ E-Books</p>
-              <a href="/ebook" className="btn">
+              <Link to="/ebook" className="btn">
                 See All
-              </a>
+              </Link>
             </div>
           </div>
           <div className="b-card">
@@ -77,9 +77,9 @@ function Category() {
                 />
               </svg>
               <p>500+ Articles</p>
-              <a href="/article" className="btn">
+              <Link to="/article" className="btn">
                 See All
-              </a>
+              </Link>
             </div>
           </div>
           <div className="b-card">
@@ -104,9 +104,9 @@ function Category() {
                 />
               </svg>
               <p>500+ Videos</p>
-              <a href="/video" className="btn">
+              <Link to="/video" className="btn">
                 See All
-              </a>
+              </Link>
             </div>
           </div>
         </div>
