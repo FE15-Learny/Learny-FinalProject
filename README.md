@@ -1,4 +1,7 @@
 # Learny-FinalProject
 
-All Video and Detail Video Page
+- Navbar
+- Homepage
+- All Video
+- Detail Video Page
 
