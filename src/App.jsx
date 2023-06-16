@@ -15,7 +15,6 @@ import Navbar from './components/Navbar/Navbar'
 import EditProfile from './pages/EditProfile';
 
 
-
 function App() {
   return (
     <>
