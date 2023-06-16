@@ -3,7 +3,7 @@ import { Container, ToggleButton, ToggleButtonGroup, Row, Col } from 'react-boot
 import { useNavigate, Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import FormSignUp from '../components/FormSignUp';
-import '../style/LoginSignup.css';
+import './style/LoginSignUp.css';
 import img from '../assets/img/hero-banner.png';
 
 const SignUp = () => {
