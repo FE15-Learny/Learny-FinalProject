@@ -1,9 +1,4 @@
 import React, { useEffect } from "react";
-// import heroBannerImg from "../assets/Img/hero-banner.png";
-// import categoryEbook from "../assets/Img/ctg-ebook.png";
-// import categoryArticle from "../assets/Img/ctg-article.png";
-// import categoryVideo from "../assets/Img/ctg-video.png";
-// import heroBannerImg from "../assets/Img/hero-banner.png";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import "../style/Home.css";
