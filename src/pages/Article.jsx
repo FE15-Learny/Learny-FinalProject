@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { articlelist } from "../config/dataarticle";
 import ArticleList from "../components/ArticleList";
 import HeaderArticle from "../components/HeaderArticle";
-import SearchBar from "../components/SearchBar";
+import SearchBar from "../components/Home/SearchBar";
 import EmptyList from "../components/common/EmptyList";
 import axios from "axios";
+import '../style/Article.css';
 
 function Article() {
   const [articles, setArticles] = useState(articlelist);
@@ -49,7 +50,7 @@ function Article() {
   return (
     <div>
       <HeaderArticle />
-      <div className="container"> 
+      <div className="container article"> 
         <SearchBar
           value={searchKey}
           clearSearch={handleClearSearch}

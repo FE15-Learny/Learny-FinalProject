@@ -5,7 +5,7 @@ function About() {
   return (
     <div>
       <div className="sub-header"></div>
-      <div className="container">
+      <div className="container about">
         <div className="row">
           <div className="about-left">
             <h3>ABOUT US</h3>

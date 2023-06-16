@@ -328,6 +328,11 @@
     padding: 0 15rem;
 }
 
+#card-art .card-text {
+    text-align: justify;
+    padding: 0.7rem 0 3rem;
+}
+
 .card-title.h5 {
     font-size: 18px;
     font-weight: bold;
@@ -361,10 +366,7 @@
     color: #548dc9;
 }
 
-.card-text {
-    text-align: justify;
-    padding: 0.7rem 0 3rem;
-}
+
 
 .btn-article {
     background-color: var(--blue3);
