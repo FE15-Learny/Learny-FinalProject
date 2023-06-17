@@ -26,7 +26,7 @@ function Category() {
           </p>
         </div>
       </section>
-      <section id="card">
+       <section id="card" style={{ marginTop: '5rem' }}>
         <div className="roa">
           <div className="b-card">
             <img src={cat1Img} width={275} alt="cat1" />
