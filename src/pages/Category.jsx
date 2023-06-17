@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import cat1Img from "../assets/Img/cat1.png";
-import cat2Img from "../assets/Img/cat2.png";
-import cat3Img from "../assets/Img/cat3.png";
+// import cat1Img from "../assets/Img/cat1.png";
+// import cat2Img from "../assets/Img/cat2.png";
+// import cat3Img from "../assets/Img/cat3.png";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
 import "../style/Category.css";
@@ -29,7 +29,7 @@ function Category() {
        <section id="card" style={{ marginTop: '5rem' }}>
         <div className="roa">
           <div className="b-card">
-            <img src={cat1Img} width={275} alt="cat1" />
+            <img src="https://i.ibb.co/xMdwQb7/cat1.png" width={275} alt="cat1" />
             <h4>E-Books</h4>
             <div className="foot">
               <p>
@@ -56,7 +56,7 @@ function Category() {
             </div>
           </div>
           <div className="b-card">
-            <img src={cat2Img} width={275} alt="cat2" />
+            <img src="https://i.ibb.co/wrHsxrp/cat2.png" width={275} alt="cat2" />
             <h4>Articles</h4>
             <div className="foot">
               <p>
@@ -83,7 +83,7 @@ function Category() {
             </div>
           </div>
           <div className="b-card">
-            <img src={cat3Img} width={275} alt="cat3" />
+            <img src="https://i.ibb.co/7bBDGm6/cat3.png" width={275} alt="cat3" />
             <h4>Video Learning</h4>
             <div className="foot">
               <p>
