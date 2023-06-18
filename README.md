@@ -1,10 +1,13 @@
 # Learny-FinalProject
 
-- Navbar
+- Landingpage
 - Homepage
 - Category
+- E-Book
 - Article
-- All Video
-- Detail Video Page
-- 
+- Video
+- Contact
+- About
 
+# Link Presentasi Youtube 
+http://bit.ly/fe15-skivul
