@@ -17,22 +17,22 @@ const NavGuest = () => {
       navLinks.classList.toggle("show-menu");
     };
 
-    const handleLoginButtonClick = () => {
-      navigate('/login');
-    };
+    // const handleLoginButtonClick = () => {
+    //   navigate('/login');
+    // };
 
-    const handleSignUpButtonClick = () => {
-      navigate('/signup');
-    };
+    // const handleSignUpButtonClick = () => {
+    //   navigate('/signup');
+    // };
 
     const hamburgerMenu = document.querySelector(".hamburger-menu");
     hamburgerMenu.addEventListener("click", handleHamburgerClick);
 
-    const loginButton = document.getElementById("login");
-    loginButton.addEventListener("click", handleLoginButtonClick);
+    // const loginButton = document.getElementById("login");
+    // loginButton.addEventListener("click", handleLoginButtonClick);
 
-    const signUpButton = document.getElementById("signup");
-    signUpButton.addEventListener("click", handleSignUpButtonClick);
+    // const signUpButton = document.getElementById("signup");
+    // signUpButton.addEventListener("click", handleSignUpButtonClick);
 
     return () => {
       hamburgerMenu.removeEventListener("click", handleHamburgerClick);
@@ -54,12 +54,12 @@ const NavGuest = () => {
           <li><Link to="/contact">Contact</Link></li>
         </ul>
 
-        <div className="nav-btn">
+        {/* <div className="nav-btn">
         
 
           <button id="signup">Sign Up</button>
           <button id="login">Log In</button>
-        </div>
+        </div> */}
 
         <div className="hamburger-menu">
           <span></span>
